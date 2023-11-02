@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Greeting Page</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #3498db;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        label, input {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #444;
+            color: #3498db;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Modern Greeting Page</h1>
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" placeholder="Your name">
+
+        <button id="submitButton">Submit</button>
+
+        <p id="greetingMessage"><span id="nameDisplay"></span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
